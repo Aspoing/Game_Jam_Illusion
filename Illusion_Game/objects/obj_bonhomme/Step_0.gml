@@ -18,8 +18,8 @@ if (state == "move") {
         move_timer = 0;
         speed = 0; // Arrête le mouvement
 
-        // Change progressivement le temps de pause
-        pause_delay = base_pause_delay + irandom_range(-10, 30) + age_factor * 20;
+        // Change aléatoirement le temps de pause
+        pause_delay = base_pause_delay + irandom_range(-10, 30);
     }
 } 
 else if (state == "pause") {
@@ -27,10 +27,10 @@ else if (state == "pause") {
     if (move_timer >= pause_delay) {
         state = "move";
         move_timer = 0;
-        speed = 1; // Redonne une vitesse
+        speed = 0.3; // Redonne une vitesse
         direction = irandom(360); // Nouvelle direction aléatoire
 
-        // Change progressivement le temps de déplacement
-        move_delay = base_move_delay + irandom_range(-20, 40) - age_factor * 15;
+        // Change aléatoirement le temps de déplacement
+        move_delay = base_move_delay + irandom_range(-20, 40);
     }
 }
