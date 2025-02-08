@@ -12,3 +12,5 @@ sprite_index = spr_player_idle;
 
 enum CHARACTER_STATE {IDLE, WALK}
 state = CHARACTER_STATE.IDLE;
+
+nearest_action = noone
