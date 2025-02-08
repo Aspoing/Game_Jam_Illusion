@@ -31,3 +31,5 @@ if (state == CHARACTER_STATE.WALK ) {
 		state = CHARACTER_STATE.IDLE;
 	}
 }
+
+var _npc 
