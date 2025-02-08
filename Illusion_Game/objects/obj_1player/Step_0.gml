@@ -14,7 +14,7 @@ if (cooldown_timer > 0) {
 // Si le joueur appuie sur E et que le cooldown est terminé
 if (keyboard_check_pressed(ord("E")) and cooldown_timer <= 0) {
     // Créer l'objet qui cache l'écran
-    instance_create_layer(0, 0, "Illusion_ability", obj_screen_cover);
+    instance_create_layer(0, 0, "Illusion", obj_screen_cover);
 	audio_play_sound(snd_lightning, 1, false);
 	audio_play_sound(snd_sizzling, 1, false);
 
