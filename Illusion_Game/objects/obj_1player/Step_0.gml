@@ -6,6 +6,12 @@ var down = keyboard_check(vk_down) or keyboard_check(ord("S"));
 x_direction = right - left
 y_direction = down - up
 
+// Si le joueur appuie sur la touche E
+if (keyboard_check_pressed(ord("E"))) {
+    // Créer l'objet qui cache l'écran (obj_screen_cover)
+    instance_create_layer(0, 0, "Illusion_ability", obj_screen_cover);
+}
+
 if (state == CHARACTER_STATE.IDLE) {
 	if (x_direction != 0) or (y_direction != 0 ) {
 		state = CHARACTER_STATE.WALK;
