@@ -72,7 +72,7 @@
     {"id":{"name":"Documentation_DepthGrass","path":"scripts/Documentation_DepthGrass/Documentation_DepthGrass.yy",},},
     {"id":{"name":"scr_collectibles","path":"scripts/scr_collectibles/scr_collectibles.yy",},},
     {"id":{"name":"sh_grass","path":"shaders/sh_grass/sh_grass.yy",},},
-    {"id":{"name":"msc_play","path":"sounds/msc_play/msc_play.yy",},},
+    {"id":{"name":"PnjDead","path":"sounds/PnjDead/PnjDead.yy",},},
     {"id":{"name":"snd_background_music","path":"sounds/snd_background_music/snd_background_music.yy",},},
     {"id":{"name":"snd_collect","path":"sounds/snd_collect/snd_collect.yy",},},
     {"id":{"name":"snd_explosion","path":"sounds/snd_explosion/snd_explosion.yy",},},
