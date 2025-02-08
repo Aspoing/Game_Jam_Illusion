@@ -1,27 +1,27 @@
 {
   "$GMSprite":"",
-  "%Name":"QuitButtonS",
+  "%Name":"SniperWon",
   "bboxMode":0,
-  "bbox_bottom":65,
-  "bbox_left":47,
-  "bbox_right":347,
-  "bbox_top":11,
+  "bbox_bottom":51,
+  "bbox_left":78,
+  "bbox_right":563,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"938887f1-82ab-4102-972d-ece00e0ea18e","name":"938887f1-82ab-4102-972d-ece00e0ea18e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"affaed91-6a2c-412e-a07b-e991b0d64c6e","name":"affaed91-6a2c-412e-a07b-e991b0d64c6e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":70,
+  "height":52,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"837fd4f6-c742-4ab9-960c-cb990bea5b25","blendMode":0,"displayName":"default","isLocked":false,"name":"837fd4f6-c742-4ab9-960c-cb990bea5b25","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"a3a984e4-8eff-4c2a-b8c5-a6017246b4df","blendMode":0,"displayName":"default","isLocked":false,"name":"a3a984e4-8eff-4c2a-b8c5-a6017246b4df","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"QuitButtonS",
+  "name":"SniperWon",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"QuitButtonS",
+    "%Name":"SniperWon",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"QuitButtonS",
+    "name":"SniperWon",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"938887f1-82ab-4102-972d-ece00e0ea18e","path":"sprites/QuitButtonS/QuitButtonS.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"214831b5-71b7-4e90-b961-dfefb75ad017","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"affaed91-6a2c-412e-a07b-e991b0d64c6e","path":"sprites/SniperWon/SniperWon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9d9fe152-bb87-4fe8-9505-bf73ea588910","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":395,
+  "width":640,
 }
