@@ -1,1 +1,3 @@
-instance_destroy();
+if (obj_gun.munitions >= 1) {
+	instance_destroy();
+}

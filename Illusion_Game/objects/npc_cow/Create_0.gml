@@ -1,3 +1,4 @@
+hp = 2;
 frame_x = 0;
 frame_y = 0;
 anim_speed = 2 / room_speed;
