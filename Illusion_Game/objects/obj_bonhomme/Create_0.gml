@@ -1,0 +1,9 @@
+state = "move"; // L'état initial est "bouger"
+move_timer = 0;
+base_move_delay = irandom_range(60, 180); // Temps de déplacement initial
+base_pause_delay = irandom_range(30, 90); // Temps de pause initial
+move_delay = base_move_delay;
+pause_delay = base_pause_delay;
+speed = 0.4; // Vitesse initiale
+direction = irandom(360); // Direction aléatoire
+age_factor = 0; // Facteur d'évolution basé sur le temps
