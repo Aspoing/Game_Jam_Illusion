@@ -28,5 +28,25 @@ if (isAlive == false) {
 	draw_text(x, y, "Sniper Won");
 }
 
+// Dessiner la barre de cooldown
+var bar_width = 200;  // Largeur de la barre
+var bar_height = 20;  // Hauteur de la barre
+var bar_x = 10;  // Position X de la barre
+var bar_y = 10;  // Position Y de la barre
+
+// Calculer le pourcentage du cooldown restant
+var cooldown_percent = cooldown_timer / cooldown_duration;
+
+// Dessiner le fond de la barre (en gris)
+draw_set_color(c_gray);
+draw_rectangle(bar_x, bar_y, bar_x + bar_width, bar_y + bar_height, false);
+
+// Dessiner la barre de cooldown (en rouge)
+draw_set_color(c_red);
+draw_rectangle(bar_x, bar_y, bar_x + (bar_width * cooldown_percent), bar_y + bar_height, false);
+
+// Dessiner le texte indiquant les secondes restantes
+draw_set_color(c_white);
+draw_text(bar_x + bar_width + 10, bar_y, string(ceil(cooldown_timer / room_speed)) + " s");
 
 draw_text(10, 10, "Collectibles: " + string(global.collectibles_collected));  // Afficher le compteur de collectibles
