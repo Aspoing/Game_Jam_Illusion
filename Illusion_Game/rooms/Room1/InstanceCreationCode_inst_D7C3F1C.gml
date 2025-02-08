@@ -1,1 +1,0 @@
-my_collectible = new Fish();

@@ -21,7 +21,4 @@ if (state == CHARACTER_STATE.WALK) {
 }
 draw_sprite_part(sprite_index, 0, frame_x * _cs, floor(frame_y) * _cs, _cs, _cs, x, y);
 
-draw_set_color(c_red);
-draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
-
 draw_text(10, 10, "Collectibles: " + string(global.collectibles_collected));  // Afficher le compteur de collectibles
