@@ -66,6 +66,8 @@
     {"id":{"name":"snd_background_music","path":"sounds/snd_background_music/snd_background_music.yy",},},
     {"id":{"name":"snd_collect","path":"sounds/snd_collect/snd_collect.yy",},},
     {"id":{"name":"snd_dead","path":"sounds/snd_dead/snd_dead.yy",},},
+    {"id":{"name":"snd_lightning","path":"sounds/snd_lightning/snd_lightning.yy",},},
+    {"id":{"name":"snd_sizzling","path":"sounds/snd_sizzling/snd_sizzling.yy",},},
     {"id":{"name":"DALL_E_2025_02_08_16_28","path":"sprites/DALL_E_2025_02_08_16_28/DALL_E_2025_02_08_16_28.yy",},},
     {"id":{"name":"Dead","path":"sprites/Dead/Dead.yy",},},
     {"id":{"name":"Item","path":"sprites/Item/Item.yy",},},
