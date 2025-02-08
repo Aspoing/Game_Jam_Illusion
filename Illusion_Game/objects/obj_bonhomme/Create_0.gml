@@ -1,7 +1,7 @@
 move_x = 0;
 move_y = 0;
 
-move_speed = 1;
+move_speed = 0.6;
 move_direction = 0;
 
 frame_x = 0;
@@ -10,8 +10,8 @@ anim_speed = 6 / room_speed;
 
 sprite_index = spr_player_idle;
 
-x_direction = irandom(2) - 1
-y_direction = irandom(2) - 1
+x_direction = irandom(1)
+y_direction = irandom(2)
 
 alarm[0] = room_speed * irandom(3);
 
