@@ -1,7 +1,7 @@
-var left = keyboard_check(vk_left);
-var right = keyboard_check(vk_right);
-var up = keyboard_check(vk_up);
-var down = keyboard_check(vk_down);
+var left = keyboard_check(vk_left) or keyboard_check(ord("Q"));
+var right = keyboard_check(vk_right) or keyboard_check(ord("D"));
+var up = keyboard_check(vk_up) or keyboard_check(ord("Z"));
+var down = keyboard_check(vk_down) or keyboard_check(ord("S"));
 
 x_direction = right - left
 y_direction = down - up

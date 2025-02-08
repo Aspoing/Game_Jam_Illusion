@@ -57,6 +57,8 @@
     {"id":{"name":"rm_world","path":"rooms/rm_world/rm_world.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_collectibles","path":"scripts/scr_collectibles/scr_collectibles.yy",},},
+    {"id":{"name":"msc_play","path":"sounds/msc_play/msc_play.yy",},},
+    {"id":{"name":"snd_collect","path":"sounds/snd_collect/snd_collect.yy",},},
     {"id":{"name":"Dead","path":"sprites/Dead/Dead.yy",},},
     {"id":{"name":"Item","path":"sprites/Item/Item.yy",},},
     {"id":{"name":"OptionButtonS","path":"sprites/OptionButtonS/OptionButtonS.yy",},},

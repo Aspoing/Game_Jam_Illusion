@@ -1,0 +1,1 @@
+my_collectible = new Cookie();
