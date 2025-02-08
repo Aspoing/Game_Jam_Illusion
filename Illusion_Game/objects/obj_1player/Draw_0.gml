@@ -19,6 +19,14 @@ if (state == CHARACTER_STATE.WALK) {
 } else {
 	frame_y = 0;
 }
-draw_sprite_part(sprite_index, 0, frame_x * _cs, floor(frame_y) * _cs, _cs, _cs, x, y);
+
+if (isAlive == true) {
+	draw_sprite_part(sprite_index, 0, frame_x * _cs, floor(frame_y) * _cs, _cs, _cs, x, y);
+}
+
+if (isAlive == false) {
+	draw_text(x, y, "Sniper Won");
+}
+
 
 draw_text(10, 10, "Collectibles: " + string(global.collectibles_collected));  // Afficher le compteur de collectibles
