@@ -34,12 +34,19 @@
   },
   "name":"Illusion_Game",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
+    {"id":{"name":"OptionButton","path":"objects/OptionButton/OptionButton.yy",},},
+    {"id":{"name":"PlayButton","path":"objects/PlayButton/PlayButton.yy",},},
+    {"id":{"name":"QuitButton","path":"objects/QuitButton/QuitButton.yy",},},
+    {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
+    {"id":{"name":"OptionButtonS","path":"sprites/OptionButtonS/OptionButtonS.yy",},},
+    {"id":{"name":"PlayButtonS","path":"sprites/PlayButtonS/PlayButtonS.yy",},},
+    {"id":{"name":"QuitButtonS","path":"sprites/QuitButtonS/QuitButtonS.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
