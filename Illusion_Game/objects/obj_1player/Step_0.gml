@@ -6,10 +6,18 @@ var down = keyboard_check(vk_down) or keyboard_check(ord("S"));
 x_direction = right - left
 y_direction = down - up
 
-// Si le joueur appuie sur la touche E
-if (keyboard_check_pressed(ord("E"))) {
-    // Créer l'objet qui cache l'écran (obj_screen_cover)
+// Si le cooldown est actif, diminuer le cooldown timer
+if (cooldown_timer > 0) {
+    cooldown_timer -= 1;
+}
+
+// Si le joueur appuie sur E et que le cooldown est terminé
+if (keyboard_check_pressed(ord("E")) and cooldown_timer <= 0) {
+    // Créer l'objet qui cache l'écran
     instance_create_layer(0, 0, "Illusion_ability", obj_screen_cover);
+
+    // Réinitialiser le cooldown
+    cooldown_timer = cooldown_duration;
 }
 
 if (state == CHARACTER_STATE.IDLE) {

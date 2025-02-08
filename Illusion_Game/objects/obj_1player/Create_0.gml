@@ -14,6 +14,9 @@ anim_speed = 6 / room_speed;
 bbox_width = 32;  // Largeur de la boîte de collision
 bbox_height = 32; // Hauteur de la boîte de collision
 
+cooldown_timer = 0;  // Initialise le cooldown à 0 (pas de cooldown au début)
+cooldown_duration = room_speed * 13;  // 13 secondes de cooldown
+
 sprite_index = spr_player_idle;
 
 enum CHARACTER_STATE {IDLE, WALK}
