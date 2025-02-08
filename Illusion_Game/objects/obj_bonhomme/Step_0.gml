@@ -1,36 +1,38 @@
-move_timer += 1;
-age_factor += 0.001; // Augmente légèrement au fil du temps
+if (state == CHARACTER_STATE.IDLE) {
+	if (x_direction != 0) or (y_direction != 0 ) {
+		state = CHARACTER_STATE.WALK;
+	}
+}
 
-if (state == "move") {
-    // Déplacement
-    x += lengthdir_x(speed, direction);
-    y += lengthdir_y(speed, direction);
+if (x < 0) {
+	x = room_width;
+} // Si elle sort à gauche
+if (x > room_width) {
+	x = 0;
+} // Si elle sort à droite
+if (y < 0) {
+	y = room_height;
+} // Si elle sort en haut
+if (y > room_height) {
+	y = 0;
+}
 
-    // Vérifie si l'IA sort de la fenêtre et ajuste la position si nécessaire
-    if (x < 0) { x = 0; direction = irandom_range(90, 270); } // Si elle sort à gauche
-    if (x > room_width) { x = room_width; direction = irandom_range(90, 270); } // Si elle sort à droite
-    if (y < 0) { y = 0; direction = irandom_range(0, 180); } // Si elle sort en haut
-    if (y > room_height) { y = room_height; direction = irandom_range(0, 180); } // Si elle sort en bas
+if (state == CHARACTER_STATE.WALK ) {
+	move_direction = point_direction(x, y, x + x_direction, y + y_direction);
 
-    // Quand on a atteint le temps de déplacement, on passe en pause
-    if (move_timer >= move_delay) {
-        state = "pause";
-        move_timer = 0;
-        speed = 0; // Arrête le mouvement
+	move_x = lengthdir_x(move_speed, move_direction);
+	move_y = lengthdir_y(move_speed, move_direction);
 
-        // Change aléatoirement le temps de pause
-        pause_delay = base_pause_delay + irandom_range(-10, 30);
-    }
-} 
-else if (state == "pause") {
-    // Quand le temps de pause est écoulé, reprendre le mouvement
-    if (move_timer >= pause_delay) {
-        state = "move";
-        move_timer = 0;
-        speed = 0.3; // Redonne une vitesse
-        direction = irandom(360); // Nouvelle direction aléatoire
+	if (move_x != 0) or (move_y != 0 ) {
+		x += move_x;
+		y += move_y;
+	} else {
+		state = CHARACTER_STATE.IDLE;
+	}	
+}
 
-        // Change aléatoirement le temps de déplacement
-        move_delay = base_move_delay + irandom_range(-20, 40);
-    }
+if (state == CHARACTER_STATE.WALK ) {
+	if (x_direction == 0) and (y_direction == 0) {
+		state = CHARACTER_STATE.IDLE;
+	}
 }
