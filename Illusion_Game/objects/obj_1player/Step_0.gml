@@ -15,6 +15,8 @@ if (cooldown_timer > 0) {
 if (keyboard_check_pressed(ord("E")) and cooldown_timer <= 0) {
     // Créer l'objet qui cache l'écran
     instance_create_layer(0, 0, "Illusion_ability", obj_screen_cover);
+	audio_play_sound(snd_lightning, 1, false);
+	audio_play_sound(snd_sizzling, 1, false);
 
     // Réinitialiser le cooldown
     cooldown_timer = cooldown_duration;
