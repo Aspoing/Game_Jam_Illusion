@@ -41,6 +41,7 @@
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"obj_1player","path":"objects/obj_1player/obj_1player.yy",},},
+    {"id":{"name":"obj_bonhomme","path":"objects/obj_bonhomme/obj_bonhomme.yy",},},
     {"id":{"name":"obj_chunk","path":"objects/obj_chunk/obj_chunk.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_world","path":"objects/obj_world/obj_world.yy",},},
@@ -57,6 +58,10 @@
     {"id":{"name":"QuitButtonS","path":"sprites/QuitButtonS/QuitButtonS.yy",},},
     {"id":{"name":"Special1","path":"sprites/Special1/Special1.yy",},},
     {"id":{"name":"Special2","path":"sprites/Special2/Special2.yy",},},
+    {"id":{"name":"OptionButtonS","path":"sprites/OptionButtonS/OptionButtonS.yy",},},
+    {"id":{"name":"PlayButtonS","path":"sprites/PlayButtonS/PlayButtonS.yy",},},
+    {"id":{"name":"Pnj","path":"sprites/Pnj/Pnj.yy",},},
+    {"id":{"name":"QuitButtonS","path":"sprites/QuitButtonS/QuitButtonS.yy",},},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},
     {"id":{"name":"spr_idle_beginning","path":"sprites/spr_idle_beginning/spr_idle_beginning.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
