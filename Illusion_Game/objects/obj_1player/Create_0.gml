@@ -1,7 +1,9 @@
 move_x = 0;
 move_y = 0;
 
-move_speed = 1;
+isAlive = true;
+
+move_speed = 0.6;
 move_direction = 0;
 
 frame_x = 0;
