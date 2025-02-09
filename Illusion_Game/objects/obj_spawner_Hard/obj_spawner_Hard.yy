@@ -1,18 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"npc_cow",
+  "%Name":"obj_spawner_Hard",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"npc_cow",
+  "name":"obj_spawner_Hard",
   "overriddenProperties":[],
   "parent":{
-    "name":"Cow",
-    "path":"folders/Npc/Cow.yy",
+    "name":"Collectibles",
+    "path":"folders/Collectibles.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_cow_face",
-    "path":"sprites/spr_cow_face/spr_cow_face.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
