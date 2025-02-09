@@ -56,6 +56,11 @@ if (state == CHARACTER_STATE.WALK ) {
 	}
 }
 
+if (isAlive == false) {
+	show_message("Victoire du Sniper ! Le ninja est mort");
+    game_end();  // Terminer le jeu après la victoire
+}
+
 if (global.collectibles_collected >= 10) {
     show_message("Victoire du ninja ! Vous avez ramassé 10 collectibles !");
     game_end();  // Terminer le jeu après la victoire
