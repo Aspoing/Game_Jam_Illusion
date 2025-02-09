@@ -2,8 +2,8 @@ spawn_timer -= 1;
 
 if (spawn_timer <= 0) {
     // Générer une position aléatoire dans la room
-    var random_x = irandom_range(0, 480);
-    var random_y = irandom_range(0, 270);
+    random_x = irandom_range(0, 480);
+    random_y = irandom_range(0, 270);
 
     // Créer le collectible à la position aléatoire
 	var random_collectible = irandom_range(0, 2);
