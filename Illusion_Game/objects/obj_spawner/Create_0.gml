@@ -1,0 +1,1 @@
+spawn_timer = room_speed * 10;  // Tous les 3 secondes

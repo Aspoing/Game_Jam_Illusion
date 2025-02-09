@@ -51,3 +51,12 @@ if (cooldown_timer == 0) draw_text(bar_x + (bar_width / 2 - 5), bar_y, "E")
 else draw_text(bar_x + (bar_width / 2 - 9), bar_y, string(ceil(cooldown_timer / room_speed)))
 
 draw_text(10, 10, "Collectibles: " + string(global.collectibles_collected));  // Afficher le compteur de collectibles
+
+var minutes = game_timer div room_speed div 60;
+var seconds = (game_timer div room_speed) mod 60;
+
+if (seconds < 10) {
+    draw_text(430, 10, string(minutes) + ":0" + string(seconds));
+} else {
+    draw_text(430, 10, string(minutes) + ":" + string(seconds));
+}

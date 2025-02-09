@@ -3,6 +3,14 @@ var right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 var up = keyboard_check(vk_up) or keyboard_check(ord("Z"));
 var down = keyboard_check(vk_down) or keyboard_check(ord("S"));
 
+if (game_timer > 0) {
+    game_timer -= 1;  // Décrémenter le timer
+} else {
+    show_message("Temps écoulé ! Sniper à gagné.");
+    game_end();  // Terminer le jeu si le temps est écoulé
+}
+
+
 x_direction = right - left
 y_direction = down - up
 
@@ -46,6 +54,11 @@ if (state == CHARACTER_STATE.WALK ) {
 	if (x_direction == 0) and (y_direction == 0) {
 		state = CHARACTER_STATE.IDLE;
 	}
+}
+
+if (global.collectibles_collected >= 10) {
+    show_message("Victoire du ninja ! Vous avez ramassé 10 collectibles !");
+    game_end();  // Terminer le jeu après la victoire
 }
 
 var _npc 

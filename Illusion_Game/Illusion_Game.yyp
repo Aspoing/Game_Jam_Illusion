@@ -64,6 +64,7 @@
     {"id":{"name":"obj_radis","path":"objects/obj_radis/obj_radis.yy",},},
     {"id":{"name":"obj_screen_cover","path":"objects/obj_screen_cover/obj_screen_cover.yy",},},
     {"id":{"name":"obj_screen_cover","path":"objects/obj_screen_cover/obj_screen_cover.yy",},},
+    {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},},
     {"id":{"name":"obj_vertexgrass","path":"objects/obj_vertexgrass/obj_vertexgrass.yy",},},
     {"id":{"name":"obj_world","path":"objects/obj_world/obj_world.yy",},},
     {"id":{"name":"PlayButton","path":"objects/PlayButton/PlayButton.yy",},},
